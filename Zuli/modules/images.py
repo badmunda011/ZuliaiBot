@@ -2,14 +2,14 @@ import requests
 import config
 from pyrogram import filters, Client
 from pyrogram.enums import ChatAction
-
+from Zuli import Zuli
 
 
 api_key = config.DEEP_API
 
 
 
-@Zuli.on_message(filters.command("image") & filters.private)
+@Zuli.on_message(filters.command("image"))
 async def generate_image(zuli, message):
     if len(message.command) < 2:
         await message.reply_text("Please provide text after the command.")
