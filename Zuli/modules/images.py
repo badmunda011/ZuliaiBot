@@ -65,7 +65,7 @@ async def generate_logo(zuli, message):
 
 
 
-@Zuli.on_message(filters.command("logo"))
+@Zuli.on_message(filters.command("anime"))
 async def generate_logo(zuli, message):
     if len(message.command) < 2:
         await message.reply_text("Please provide text after the command.")
