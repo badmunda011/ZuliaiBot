@@ -1,4 +1,4 @@
-import os
+import os, config
 import openai
 from pyrogram import filters
 from Zuli import Zuli
@@ -8,7 +8,7 @@ from pyrogram.enums import ChatAction, ParseMode
 
 
 
-openai.api_key = "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"
+openai.api_key = config.GPT_API
 
 
 
