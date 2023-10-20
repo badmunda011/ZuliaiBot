@@ -1,9 +1,9 @@
-import requests
+import requests, config
 from pyrogram import filters
 from Zuli import Zuli
 from pyrogram.enums import ChatAction, ParseMode
 
-api_key = ""
+api_key = config.DEEP_API
 
 
 
