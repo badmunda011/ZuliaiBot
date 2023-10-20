@@ -13,7 +13,7 @@ async def chat(zuli: Zuli, message):
     try:
         await zuli.send_chat_action(message.chat.id, ChatAction.TYPING)
         if len(message.command) < 2:
-            await message.reply("Hello {name\n}Please provide text after the /deep command")
+            await message.reply_text("Hello {name\n}Please provide text after the /deep command")
                 
         else:
             a = message.text.split(' ', 1)[1]
