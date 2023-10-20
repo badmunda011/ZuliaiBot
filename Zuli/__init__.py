@@ -34,7 +34,7 @@ Zuli = Client(
 async def zuli_bot():
     global BOT_ID, BOT_NAME, BOT_USERNAME
     await Zuli.start()
-    getme = await zuli.get_me()
+    getme = await Zuli.get_me()
     BOT_ID = getme.id
     BOT_USERNAME = getme.username
     if getme.last_name:
