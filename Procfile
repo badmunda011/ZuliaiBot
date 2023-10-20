@@ -1,1 +1,1 @@
-worker: Zuli
+worker: python -m Zuli
