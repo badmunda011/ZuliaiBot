@@ -2,7 +2,7 @@ import pymongo
 import pyotp
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from Celestia import Celestia 
+from Zuli import Zuli as Celestia 
 
 
 mongo_client = pymongo.MongoClient("mongodb+srv://Bikash:Bikashop@bikash.cbkkx4c.mongodb.net/?retryWrites=true&w=majority")
