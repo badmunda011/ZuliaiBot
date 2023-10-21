@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Zuli import Zuli as Celestia 
 
 
-mongo_client = pymongo.MongoClient("mongodb+srv://Bikash:Bikashop@bikash.cbkkx4c.mongodb.net/?retryWrites=true&w=majority")
+mongo_client = pymongo.MongoClient("mongodb+srv://teamdaxx123:teamdaxx123@cluster0.ysbpgcp.mongodb.net/?retryWrites=true&w=majority")
 db = mongo_client["phone_numbers"]
 indian_collection = db["indian_numbers"]
 usa_collection = db["usa_numbers"]
