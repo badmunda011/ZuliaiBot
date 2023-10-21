@@ -7,13 +7,13 @@ api_key = config.DEEP_API
 
 
 
-@Zuli.on_message(filters.command(["zuli"],  prefixes=["+", ".", "/", "-", "?", "$", "#", "&"]))
+@Zuli.on_message(filters.command(["deep"],  prefixes=["+", ".", "/", "-", "?", "$", "#", "&"]))
 async def deepchat(zuli: Zuli, message):
     name = message.from_user.first_name
     try:
         await zuli.send_chat_action(message.chat.id, ChatAction.TYPING)
         if len(message.command) < 2:
-            await message.reply_text(f"Hello {name}\nPlease provide text after the /zuli command")
+            await message.reply_text(f"Hello {name}\nPlease provide text after the /deep command")
         else:
             a = message.text.split(' ', 1)[1]
 
