@@ -1,7 +1,9 @@
 from lexica import Client
 from pyrogram import filters
 from Zuli import Zuli
-from pyrogram.types import ChatAction
+
+
+
 
 def main(prompt: str) -> str:
     client = Client()
