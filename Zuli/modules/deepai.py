@@ -7,7 +7,7 @@ api_key = config.DEEP_API
 
 
 
-@Zuli.on_message(filters.command(["deep"],  prefixes=["+", ".", "/", "-", "?", "$", "#", "&"]))
+@Zuli.on_message(filters.command(["deep" , "daxx" ],  prefixes=["+", ".", "/", "-", "?", "$", "#", "&"]))
 async def deepchat(zuli: Zuli, message):
     name = message.from_user.first_name
     try:
