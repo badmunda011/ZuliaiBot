@@ -5,7 +5,7 @@ from importlib import import_module
 from os import listdir, path
 from dotenv import load_dotenv
 from pyrogram import Client
-from config import API_ID, API_HASH, BOT_TOKEN
+from config import API_ID, API_HASH, BOT_TOKEN, POKI_TOKEN
 
 
 
@@ -29,11 +29,17 @@ Zuli = Client(
     bot_token=BOT_TOKEN,
 )
 
-
+Puki = Client(
+    ":Poki:",
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=POKI_TOKEN,
+)
 
 async def zuli_bot():
     global BOT_ID, BOT_NAME, BOT_USERNAME
     await Zuli.start()
+    awaut Puki.start()
     getme = await Zuli.get_me()
     BOT_ID = getme.id
     BOT_USERNAME = getme.username
