@@ -1,10 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Zuli import Poki
-from config import POKI_USERNAME
+
+
 
 start_txt = """**
-Hey, I am the Poki bot. I have many games for you to enjoy, and this bot is created purely for entertainment. Just click the games button and have fun playing.
+ʜᴇʏ, ɪ ᴀᴍ ᴛʜᴇ ᴘᴏᴋɪ ʙᴏᴛ. ɪ ʜᴀᴠᴇ ᴍᴀɴʏ ɢᴀᴍᴇꜱ ꜰᴏʀ ʏᴏᴜ ᴛᴏ ᴇɴᴊᴏʏ, ᴀɴᴅ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴄʀᴇᴀᴛᴇᴅ ᴘᴜʀᴇʟʏ ꜰᴏʀ ᴇɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛ. ᴊᴜꜱᴛ ᴄʟɪᴄᴋ ᴛʜᴇ ɢᴀᴍᴇꜱ ʙᴜᴛᴛᴏɴ ᴀɴᴅ ʜᴀᴠᴇ ꜰᴜɴ ᴘʟᴀʏɪɴɢ.
 **"""
 
 
@@ -14,7 +15,7 @@ Hey, I am the Poki bot. I have many games for you to enjoy, and this bot is crea
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{POKI_USERNAME}?startgroup=true")
+          InlineKeyboardButton("ɢᴀᴍᴇꜱ", url="https://poki.com")
         ],
         [
           InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/DevsOops"),
