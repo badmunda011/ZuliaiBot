@@ -10,7 +10,7 @@ def main(prompt: str) -> str:
     response = client.palm(prompt)
     return response["content"].strip()
 
-@Zuli.on_message(filters.regex(r"Yumikoo|yumikoo|baby|Baby"))
+@Zuli.on_message(filters.regex(r"Yumi|yumi|baby|Baby"))
 async def deepchat(zuli: Zuli, message):
     if message.reply_to_message:
         query = message.text.split(' ', 1)[1]
