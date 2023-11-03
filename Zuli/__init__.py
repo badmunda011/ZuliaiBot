@@ -29,7 +29,7 @@ Zuli = Client(
     bot_token=BOT_TOKEN,
 )
 
-Puki = Client(
+Poki = Client(
     ":Poki:",
     api_id=API_ID,
     api_hash=API_HASH,
@@ -39,7 +39,7 @@ Puki = Client(
 async def zuli_bot():
     global BOT_ID, BOT_NAME, BOT_USERNAME
     await Zuli.start()
-    awaut Puki.start()
+    await Poki.start()
     getme = await Zuli.get_me()
     BOT_ID = getme.id
     BOT_USERNAME = getme.username
