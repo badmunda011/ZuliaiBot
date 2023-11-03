@@ -12,7 +12,7 @@ start_txt = """**
 
 
 
-@Zuli.on_message(filters.command("start"))
+@Zuli.on_message(filters.command("on"))
 async def start(_, msg):
     buttons = [
         [ 
