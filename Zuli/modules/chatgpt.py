@@ -36,7 +36,7 @@ async def chatgpt(zuli, message):
 
 
 @Zuli.on_message(filters.command(["assis"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
-async def chat(hiroko :Hiroko, message):
+async def chat(hiroko :Zuli, message):
     
     try:
         start_time = time.time()
