@@ -35,7 +35,7 @@ async def chatgpt(zuli, message):
 
 
 
-@app.on_message(filters.command(["assis"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
+@Zuli.on_message(filters.command(["assis"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
 async def chat(hiroko :Hiroko, message):
     
     try:
